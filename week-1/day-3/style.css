@@ -1,6 +1,54 @@
-p {
+span {
   color: blue; /* Styles! */
   font-size: 20px;
   font-style: italic;
   line-height: 22px;
+}
+
+p {
+  color: purple;
+}
+
+/*
+colors
+
+RGB Values
+used with rgb (numeric value, numeric value, numeric value)
+
+Hex Codes 
+
+
+Color Names
+
+*/
+
+body {
+  /*background-color: rgb(25, 180, 70);*/
+  background-color: #48d1cc;
+}
+/*
+type of selectors
+
+html element
+id (#)
+class (.)
+
+*/
+
+/* Colors */
+
+/*color - font
+background-color - element */
+
+
+
+h1 {
+   text-align: center; /* left, center, right, justify */
+   text-transform: lowercase; /* UPPERCASE, lowercase, Capitalize */
+   text-decoration: underline; /* none, underline */
+   line-height: 20px; /* number, px value */
+   font-weight: normal; /* normal, bold */
+   font-style: italic; /* regular, italic */
+   font-family: "Syne Tactile", arial, sans-serif; /* sans-serif, serif */
+   font-size: 150px; 
 }
