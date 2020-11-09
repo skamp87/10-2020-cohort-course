@@ -7,6 +7,12 @@
 - Intro to JavaScript
 - DOM Manipulation
 
+/* 
+By Id- document.getElementbyId("david")
+By Tag- document.getElementsByTagName("h1")
+By Class- document.getElementsbyClassName
+By Selector- document.querySelector document.querySelectorAll
+*/
 ### References
 
 - http://eloquentjavascript.net/13_dom.html
