@@ -4,45 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W2D4 - JS Carousel</title>
-    <style>
-        #imageslider {
-            display: flex;
-            color: blue;
-            /*border: 4px solid red;*/
-        }
-        #imageslider-2 {
-            display: flex;
-            color: blue;
-            /*border: 4px solid red;*/
-        }
-        #window {
-            overflow: hidden;
-            /*border: 4px solid blue*/
-            width: 500px;
-            height: 400px;
-        }
-        h1 {
-            text-align: center;
-        }
-        h2 {
-            text-align: center;
-        }
-        @keyframes example {
-            from {transform: translateX(0px);}
-            to {transform: translateX(-500px);}
-        }
-        div {
-            animation-name: example;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./File.js"></script>
+    
 </head>
 <body>
     <h1>Animated Carousel</h1>
     <h2 style="color: springgreen;">Beauty is everywhere.</h2>
         <div id="window" style="background-color: teal; width: 500px; height: 400px; margin: 0 auto; overflow: hidden">
-            <div id="imageslider" style="display: flex;">
+            <div id="imageslider">
                 <img width="500px" height="400px" src="https://blog1.fkimg.com/wp-content/uploads/2019/11/lincoln-memorial-at-sunset.jpg" alt="" >
                 <img width="500px" height="400px" src="https://i.redd.it/rccct3nvrt751.jpg" alt="">
                 <img width="500px" height="400px" src="https://cutewallpaper.org/21/sunset-mountains-landscape-wallpapers/Landscape,-Mountain,-Sunset-Wallpapers-Hd-Desktop-.jpg" alt="" >
@@ -69,27 +39,18 @@
                 <img width="500px" height="400px" src="https://www.futurestay.com/read/wp-content/uploads/sites/2/Capture-and-Market-Your-Lake-Houses-Beauty.jpg" alt="">
             </div>    
         </div>
+        <div id="button">
             <button margin: 0 auto; onclick="prevImage()">Press it</button>
             <button margin: 0 auto; onclick="nextImage()">You won't</button>
-    <script>
+        </div>
     
-        var currentPosition = 0;
+    
 
-        var prevImage = function() {
-            currentPosition = currentPosition + 500;
-            document.getElementById('imageslider2').style.transform = 'translateX(' + currentPosition + 'px)'
-        }
 
-        var nextImage = function() {
-            currentPosition = currentPosition - 500;
-            document.getElementById('imageslider2').style.transform = 'translateX(' + currentPosition + 'px)'
-        } 
-
-        setTimeout(nextImage, 1000)
+        <!--setTimeout(nextImage, 1000)
         setTimeout(nextImage, 2000)
-        setTimeout(nextImage, 3000) 
+        setTimeout(nextImage, 3000) -->
 
-    </script>
 </body>
 </html>
 

@@ -1,0 +1,31 @@
+#imageslider {
+    display: flex;
+    color: blue;
+    animation-name: Carousel;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    /*border: 4px solid red;*/
+}
+#imageslider-2 {
+    display: flex;
+}
+.window {
+    overflow: hidden;
+    /*border: 4px solid blue*/
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+@keyframes Carousel {
+    from {transform: translateX(0px);}
+    to {transform: translateX(-2000px);}
+}
+#button {
+    text-align: center;
+}
